@@ -29,11 +29,11 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "G5T K4Y",
       Subtitle = "Idk",
-      Note = "Fuck y0u", -- Use this to tell the user how to get a key
+      Note = "Get the key on https://loot-link.com/s?cGwPRBEj", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"var1340_upvw"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"Iam01"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
