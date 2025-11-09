@@ -1,0 +1,101 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "010101010110101010101010111101001010101",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "ERROR 918",
+   LoadingSubtitle = "by Script5r and T1",
+   ShowText = "Nothing", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "h", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "010101"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "G5T K4Y",
+      Subtitle = "Idk",
+      Note = "Fuck y0u", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"010101101010100101001111001"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("S C R I P T", "code")
+
+local Button = Tab:CreateButton({
+   Name = "Sans",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyeMoz/Main/refs/heads/main/Resul/Scripts/Uploads/Upload/Survival%20Instinct",true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "GEI SAS",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Dex (v3)",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "AWE Hub Best Keyless Slap Royale Script",
+   Callback = function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/screptmaster/awe-hub/main/slap-royale.lua'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Solara Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/Wfe784Xn/raw"))()
+   end,
+})
+
+local Tab = Window:CreateTab("(R6 & R15) FE Movement Animation", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Script",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Fe%20Better%3F%20Movement"))()
+   end,
+})
+
+local Label = Tab:CreateLabel("This is bugged!!1!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
+local Tab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+
+local Label = Tab:CreateLabel("Thank you for testing my script!", 4483362458, Color3.fromRGB(0, 255, 0), false) -- Title, Icon, Color, IgnoreTheme
+
+local Label = Tab:CreateLabel("By the way get the fuck out of here", 4483362458, Color3.fromRGB(0, 255, 0), false) -- Title, Icon, Color, IgnoreTheme
+
+local Tab = Window:CreateTab("Msdoors", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "doors",
+   Callback = function()
+  loadstring(game:HttpGet("https://www.msdoors.xyz/script"))()
+   end,
+})
