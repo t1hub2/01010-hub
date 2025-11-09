@@ -99,3 +99,12 @@ local Button = Tab:CreateButton({
   loadstring(game:HttpGet("https://www.msdoors.xyz/script"))()
    end,
 })
+
+local Tab = Window:CreateTab("T1 hub", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Hub",
+   Callback = function()
+   
+   end,
+})
