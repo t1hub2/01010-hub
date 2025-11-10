@@ -37,6 +37,12 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://111598396888819"
+
+sound.Parent = game.Players.LocalPlayer.PlayerGui
+sound:Play()
+
 local Tab = Window:CreateTab("S C R I P T", "code")
 
 local Button = Tab:CreateButton({
