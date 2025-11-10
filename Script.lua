@@ -114,3 +114,23 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brib-testing-2/refs/heads/main/Code.lua"))()
    end,
 })
+
+local Tab = Window:CreateTab("T E S T", 4483362458)
+
+local Button = Tab:CreateButton({
+   Name = "Msg with sound",
+   Callback = function()
+Rayfield:Notify({
+   Title = "Test",
+   Content = "Yeah test what did you think",
+   Duration = 6.5,
+   Image = "rewind",
+})
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://428495297"
+
+sound.Parent = game.Players.LocalPlayer.PlayerGui
+sound:Play()
+   end,
+})
