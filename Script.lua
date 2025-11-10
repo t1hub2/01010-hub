@@ -97,6 +97,13 @@ local Label = Tab:CreateLabel("Thank you for testing my script!", 4483362458, Co
 
 local Label = Tab:CreateLabel("By the way get the fuck out of here", 4483362458, Color3.fromRGB(0, 255, 0), false) -- Title, Icon, Color, IgnoreTheme
 
+local Button = Tab:CreateButton({
+   Name = "Copy discord server link",
+   Callback = function()
+    setclipboard("https://discord.gg/v7uUxDQe")
+   end,
+})
+
 local Tab = Window:CreateTab("Msdoors", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
