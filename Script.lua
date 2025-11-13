@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "ERROR 918",
    LoadingSubtitle = "by Script5r and T1",
    ShowText = "Nothing", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "h", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -290,5 +290,14 @@ sound.SoundId = "rbxassetid://428495297"
 
 sound.Parent = game.Players.LocalPlayer.PlayerGui
 sound:Play()
+   end,
+})
+
+local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Neox Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/loader", true))()
    end,
 })
