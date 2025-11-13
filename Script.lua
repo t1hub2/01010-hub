@@ -37,8 +37,15 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+Rayfield:Notify({
+   Title = "The script's are not made by us",
+   Content = "All of the scripts are not made by us (except T1hub)",
+   Duration = 6.5,
+   Image = "message-square-warning",
+})
+
 local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://111598396888819"
+sound.SoundId = "rbxassetid://428495297"
 
 sound.Parent = game.Players.LocalPlayer.PlayerGui
 sound:Play()
